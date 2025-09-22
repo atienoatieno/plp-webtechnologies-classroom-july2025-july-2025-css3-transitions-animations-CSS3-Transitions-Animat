@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Welcome to My Interactive Demo</h1>
+    <p>Explore how simple animations and JavaScript can make a page feel alive.</p>
+  </header>
+
+  <!-- Part 1: CSS Transitions & Animations -->
+  <section>
+    <h2>Hover & Animation Effects</h2>
+    <p>Move your mouse over the button or watch the box below come to life.</p>
+    <button class="btn-animate">Hover Over Me</button>
+    <div class="box"></div>
+  </section>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section>
+    <h2>JavaScript in Action</h2>
+    <p>Click the buttons to see how JavaScript functions can calculate values and manage data.</p>
+
+    <button onclick="showScopeExample()">Check Variable Scope</button>
+    <p id="scope-output" class="output"></p>
+
+    <button onclick="calculateArea(7, 12)">Find Rectangle Area (7x12)</button>
+    <p id="calc-output" class="output"></p>
+  </section>
+
+  <!-- Part 3: CSS + JavaScript Together -->
+  <section>
+    <h2>Dynamic Interactions</h2>
+    <p>Here’s where animations meet interactivity. Try bouncing the box or opening the modal window.</p>
+
+    <button onclick="triggerBoxAnimation()">Bounce the Box</button>
+    <button onclick="toggleModal()">Open Modal</button>
+
+    <div class="box js-box"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleModal()">&times;</span>
+        <h3>👋 Hello There!</h3>
+        <p>This is a sliding modal controlled by JavaScript. Pretty neat, right?</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
